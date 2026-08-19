@@ -1,5 +1,13 @@
 # demo-mongodb-s3-dbt-duckdb
 
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white)
+![AWS Glue](https://img.shields.io/badge/AWS%20Glue-232F3E?style=flat&logo=amazonaws&logoColor=white)
+![Amazon S3](https://img.shields.io/badge/Amazon%20S3-569A31?style=flat&logo=amazons3&logoColor=white)
+![dbt](https://img.shields.io/badge/dbt-FF694B?style=flat&logo=dbt&logoColor=white)
+![DuckDB](https://img.shields.io/badge/DuckDB-FFF000?style=flat&logo=duckdb&logoColor=black)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
+
 An end-to-end data engineering pipeline built to demonstrate a modern, serverless ELT workflow: **MongoDB Atlas → AWS Glue → Amazon S3 → dbt/DuckDB**, transforming raw NoSQL data into a curated, analytics-ready star schema.
 
 The demo dataset models a school health & safeguarding system: schools, students, staff, medications, incidents, and care plans.
