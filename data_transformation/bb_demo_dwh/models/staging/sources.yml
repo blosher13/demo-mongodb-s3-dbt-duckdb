@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: bb-mdb-democluster
+    schema: raw
+    description: Raw data landed by AWS Glue from MongoDB Atlas
+    meta:
+      external_location: "s3://bb-s3-demobucket-215520152793-us-east-2-an/raw/bb-mdb-democluster/{name}/*.parquet"
+    tables:
+      - name: care_plans
+      - name: incidents
+      - name: medications
+      - name: schools
+      - name: staff
+      - name: students

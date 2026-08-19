@@ -1,0 +1,64 @@
+version: 2
+
+models:
+  - name: dim_schools
+    description: One row per school.
+    columns:
+      - name: school_key
+        description: Surrogate key for the school.
+      - name: school_id
+        description: Natural key from the source system.
+
+  - name: dim_students
+    description: One row per student, enriched with their school.
+    columns:
+      - name: student_key
+        description: Surrogate key for the student.
+      - name: student_id
+        description: Natural key from the source system.
+      - name: school_key
+        description: Foreign key to dim_schools.
+
+  - name: dim_staff
+    description: One row per staff member, enriched with their school.
+    columns:
+      - name: staff_key
+        description: Surrogate key for the staff member.
+      - name: staff_id
+        description: Natural key from the source system.
+      - name: school_key
+        description: Foreign key to dim_schools.
+
+  - name: fct_medication_administrations
+    description: One row per medication administration record.
+    columns:
+      - name: medication_administration_key
+        description: Surrogate key for the medication administration event.
+      - name: student_key
+        description: Foreign key to dim_students.
+      - name: school_key
+        description: Foreign key to dim_schools.
+      - name: administered_by_staff_key
+        description: Foreign key to dim_staff.
+
+  - name: fct_incidents
+    description: One row per reported incident.
+    columns:
+      - name: incident_key
+        description: Surrogate key for the incident.
+      - name: student_key
+        description: Foreign key to dim_students.
+      - name: school_key
+        description: Foreign key to dim_schools.
+      - name: reported_by_staff_key
+        description: Foreign key to dim_staff.
+
+  - name: fct_care_plans
+    description: One row per student care plan.
+    columns:
+      - name: care_plan_key
+        description: Surrogate key for the care plan.
+      - name: care_plan_id
+        description: Natural key from the source system.
+      - name: student_key
+        description: Foreign key to dim_students.
