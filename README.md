@@ -14,6 +14,24 @@ The demo dataset models a school health & safeguarding system: schools, students
 
 ---
 
+# Technology Stack
+
+| Technology | Role |
+|---|---|
+| **Python** | Data generation and pipeline orchestration |
+| **Faker** | Synthetic operational data generation |
+| **MongoDB** | Operational/document database |
+| **PyMongo** | MongoDB connectivity |
+| **Amazon S3** | Cloud object storage / data lake |
+| **DuckDB** | Analytical query engine |
+| **dbt Core** | SQL transformation and data modelling |
+| **dbt-duckdb** | dbt adapter for DuckDB |
+| **SQL** | Data transformation and analytical modelling |
+| **YAML** | dbt configuration, sources and tests |
+| **Git** | Version control |
+
+---
+
 ## Architecture
 
 ```
