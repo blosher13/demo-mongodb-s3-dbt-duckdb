@@ -1,4 +1,4 @@
-# demo-mongodb-s3-dbt-duckdb
+# mongodb-s3-dbt-duckdb
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white)
@@ -11,6 +11,8 @@
 An end-to-end data engineering pipeline built to demonstrate a modern, serverless ELT workflow: **MongoDB Atlas → AWS Glue → Amazon S3 → dbt/DuckDB**, transforming raw NoSQL data into a curated, analytics-ready star schema.
 
 The demo dataset models a school health & safeguarding system: schools, students, staff, medications, incidents, and care plans.
+
+![Dbt data lineage documentation](dbt-dag.png)
 
 ## What this project demonstrates
 
